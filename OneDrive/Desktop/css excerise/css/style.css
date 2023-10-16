@@ -1,0 +1,126 @@
+/* custom properties */
+:root{
+    --favouritecolor:#900b4c;
+    --favouritecolor1:#030a57;
+    --favouritecolor2:#60936f;
+    --favouritecolor3:#3fd9df;
+}
+
+/* thie is an element selector */
+table,
+th,
+td {
+    border: burlywood solid 2px;
+    margin: auto;
+}
+
+header h2{
+    color:var(--favouritecolor2)
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 1rem;
+    color: aliceblue;
+    background-color: var(--favouritecolor1);
+    text-align: center;
+}
+
+/* class selector */
+.nav{
+    background-color:var(--favouritecolor3);
+    text-align: center;
+}
+
+/* id selector */
+#main{
+    margin: 30px;
+    text-align: center;
+}
+
+/* child selector */
+aside >p{
+    border: dotted 10px;
+    color: dimgray;
+}
+
+/*  */
+aside + button{
+    
+}
+
+/* general sibling selector */
+p ~ article{
+    background-color: coral;
+}
+
+/* universal selector */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:800;
+}
+
+h3{
+    background-color: var(--favouritecolor);
+    padding: 2rex;
+    display: none;
+}
+
+/* shows element when hovering over div */
+#hover:hover h3{
+    display: block;
+}
+
+/* chnages text to purple when clicked */
+a:active{
+    color: purple;
+}
+
+/* changes text color of all children elements */
+tr:first-child{
+    color: yellowgreen;
+}
+
+tr td:first-child:hover{
+    color: crimson;
+}
+
+p i:first-child{
+    color: blue;
+}
+
+p:first-child i{
+    color: peru;
+}
+
+p::selection{
+    color: yellowgreen;
+}
+
+.paragraph::first-line{
+    color: red;
+}
+
+.paragraph::first-letter{
+    color: blue;
+} 
+
+article::before{
+    content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
+}
+article::before{
+    content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
+}
+
+
+p [title]{
+    color: yellowgreen;
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-color: var(--favouritecolor);
+
+    }
+}
+
